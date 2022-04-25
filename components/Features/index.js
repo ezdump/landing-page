@@ -150,13 +150,28 @@ const Features = () => {
                       style={{
                         width: "10em",
                         objectFit: "contain",
+                        position: "absolute",
                         color: "white",
+                        top: "8px",
+                        left: "50%",
+                        transform: "translateX(-50%)",
                       }}
                     >
                       <Image alt={item.title} src={item.img} />
                     </div>
                     <br />
-                    <span className="feature_title">{item.title}</span>
+                    <span
+                      style={{
+                        position: "absolute",
+                        top: "80%",
+                        width: "100%",
+                        textAlign: "center",
+                        left: 0
+                      }}
+                      className="feature_title"
+                    >
+                      {item.title}
+                    </span>
                   </span>
                   {/* Service Item Cover Ends */}
                   {/* Service Item Content Starts */}
