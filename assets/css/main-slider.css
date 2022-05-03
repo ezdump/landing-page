@@ -1,0 +1,268 @@
+.mainslider {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.mainslider > .background {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.mainslider > .background > .background-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.mainslider > .on {
+  z-index: 10;
+  transition: all 0.8s;
+  transition-timing-function: cubic-bezier(0.21, 0.61, 0.07, 0.94);
+}
+
+.mainslider > .off {
+  z-index: 9;
+  transition: all 0.8s;
+  transition-timing-function: cubic-bezier(0.21, 0.61, 0.07, 0.94);
+  cursor: default;
+}
+
+.mainslider > .title {
+  position: absolute;
+  top: 35%;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.title > .we_are_title {
+  font-size: 1.1em;
+}
+
+.title > h1 > .ez_dump_truck_title {
+  font-size: 1.2em !important;
+}
+
+.mainslider > .subtitle {
+  position: absolute;
+  top: 51%;
+  color: #fff;
+  font-size: 0.7em;
+  font-weight: bold;
+}
+
+.mainslider > .paragraph {
+  position: absolute;
+  width: 448px;
+  top: 61%;
+  display: block;
+  white-space: normal;
+}
+
+.paragraph > p {
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  font-size: 0.9em;
+  padding: 1em;
+}
+
+.mainslider > .button {
+  position: absolute;
+  top: 75%;
+  border-radius: 8px;
+  color: #000;
+  font-size: 1em;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+}
+
+.mainslider > .desktop {
+  position: absolute;
+  width: 45em;
+  top: 25%;
+  border-radius: 8px;
+  color: #000;
+  font-size: 1em;
+  text-align: center;
+}
+
+.device {
+  position: relative;
+}
+
+.desktop > .device > .view {
+  position: absolute;
+  top: 3.7em;
+  left: 7.6em;
+  width: 66%;
+  height: 67.5%;
+}
+
+.mainslider > .tablet {
+  position: absolute;
+  width: 22em;
+  top: 30%;
+  border-radius: 8px;
+  color: #000;
+  font-size: 1em;
+  text-align: center;
+}
+
+.tablet > .device > .view {
+  position: absolute;
+  top: 3.7em;
+  left: 3.6em;
+  width: 67%;
+}
+
+.mainslider > .mobile {
+  position: absolute;
+  width: 12em;
+  top: 39%;
+  border-radius: 8px;
+  color: #000;
+  font-size: 1em;
+  text-align: center;
+}
+
+.mobile > .view {
+  position: absolute;
+  top: 1em;
+  left: 0.2em;
+  width: 84%;
+  height: 21.5em;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.mobile > .device {
+  position: absolute;
+  top: 1em;
+  left: 0em;
+  width: 89%;
+  height: 22.5em;
+  border-radius: 10px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  z-index: 1;
+}
+
+@media (max-width: 1199px) {
+  .mainslider > .title {
+    position: absolute;
+    top: 15%;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .title > h1 > .ez_dump_truck_title {
+    font-size: 1em !important;
+  }
+
+  .mainslider > .subtitle {
+    top: 30%;
+    font-size: 0.6em;
+  }
+
+  .mainslider > .paragraph {
+    width: 400px;
+    top: 40%;
+  }
+
+  .mainslider > .button {
+    top: 52%;
+  }
+}
+
+@media (max-width: 767px) {
+  .mainslider > .title {
+    position: absolute;
+    top: 12%;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .title > h1 > .ez_dump_truck_title {
+    font-size: 1em !important;
+  }
+
+  .mainslider > .subtitle {
+    top: 25%;
+    font-size: 0.55em;
+  }
+
+  .mainslider > .paragraph {
+    width: 380px;
+    top: 34%;
+  }
+
+  .mainslider > .button {
+    top: 45%;
+  }
+
+  .mainslider > .desktop {
+    width: 30em;
+    top: 50%;
+  }
+  
+  .desktop > .device > .view {
+    top: 2.5em;
+    left: 5.2em;
+  }
+  
+  .mainslider > .tablet {
+    width: 18em;
+    top: 57%;
+  }
+  
+  .tablet > .device > .view {
+    position: absolute;
+    top: 3.1em;
+    left: 3em;
+    width: 67%;
+  }
+  
+  .mainslider > .mobile {
+    width: 12em;
+    top: 60%;
+  }
+}
+
+@media (max-width: 281px) {
+  .mainslider > .title {
+    font-size: 1.6rem;
+  }
+
+  .title > h1 > .ez_dump_truck_title {
+    font-size: .8em !important;
+  }
+
+  .mainslider > .paragraph {
+    width: 250px;
+    top: 34%;
+  }
+
+  .mainslider > .button {
+    top: 52%;
+  }
+
+  .mainslider > .desktop {
+    display: none;
+  }
+  
+  .mainslider > .tablet {
+    display: none;
+  }
+  
+  
+  .mainslider > .mobile {
+    display: none;
+  }
+}

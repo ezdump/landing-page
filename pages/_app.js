@@ -1,18 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../assets/css/bootstrap.min.css";
 import "../assets/css/font-awesome.min.css";
 import "../assets/css/magnific-popup.css";
 import "../assets/css/rtl.css";
 import "../assets/css/skins/goldenrod.css";
 import "../assets/css/style.css";
+import "../assets/css/main-slider.css";
+import "../assets/css/header.css";
 import "../assets/js/plugins/revolution/css/layers.css";
 import "../assets/js/plugins/revolution/css/navigation.css";
 import "../assets/js/plugins/revolution/css/settings.css";
+
 import AboutUs from "../components/AboutUs";
 import BackToTop from "../components/BackToTop";
 import ContactForm from "../components/ContactForm";
 import CustomHead from "../components/CustomHead";
-import CustomScripts from "../components/CustomScripts";
 import Features from "../components/Features";
 import Footer from "../components/Footer";
 import FrequentQuestions from "../components/FrequentQuestions";
@@ -23,14 +25,33 @@ import MainSlider from "../components/MainSlider";
 import Video from "../components/Video";
 import WhyUs from "../components/WhyUs";
 import "./index.css";
+import { wrapper } from "../store";
+import { useSelector } from "react-redux";
 
 function MyApp({ Component, pageProps }) {
+  const { isBannerLoaded } = useSelector((state) => state.banner);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    if (isBannerLoaded) {
+      setTimeout(() => {
+        setIsLoading(false);
+      }, 1000);
+    }
+  }, [isBannerLoaded]);
+
   return (
     <React.Fragment>
       <CustomHead />
       <Loader />
       {/* Page Wrapper Starts */}
-      <div className="wrapper">
+      <div
+        className="wrapper"
+        style={{
+          height: !isLoading ? "auto" : "100vh",
+          overflow: "hidden",
+        }}
+      >
         <Intercom />
         <Header />
         <MainSlider />
@@ -55,4 +76,4 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
-export default MyApp;
+export default wrapper.withRedux(MyApp);
