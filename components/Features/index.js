@@ -166,7 +166,7 @@ const Features = () => {
                         top: "80%",
                         width: "100%",
                         textAlign: "center",
-                        left: 0
+                        left: 0,
                       }}
                       className="feature_title"
                     >
@@ -199,7 +199,10 @@ const Features = () => {
             }
           })}
           <button
-            className="custom-button slider-button scroll-to-target"
+            className={
+              "custom-button slider-button scroll-to-target" +
+              (shownFeatures < totalFeatures ? "" : " to-exit")
+            }
             onClick={handleClick}
             style={{
               margin: "0 auto",

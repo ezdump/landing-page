@@ -26,11 +26,28 @@ import Video from "../components/Video";
 import WhyUs from "../components/WhyUs";
 import "./index.css";
 import { wrapper } from "../store";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { setDevice } from "../store/actions";
 
 function MyApp({ Component, pageProps }) {
   const { isBannerLoaded } = useSelector((state) => state.banner);
   const [isLoading, setIsLoading] = useState(true);
+  const dispatch = useDispatch();
+
+  const handleResize = () => {
+    const width = window.innerWidth;
+    if (width > 1199) dispatch(setDevice("desktop"));
+    else if (width > 767) dispatch(setDevice("tablet"));
+    else dispatch(setDevice("mobile"));
+  };
+
+  useEffect(() => {
+    addEventListener("resize", handleResize);
+    handleResize();
+    return () => {
+      removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   useEffect(() => {
     if (isBannerLoaded) {

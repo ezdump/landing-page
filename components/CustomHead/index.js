@@ -4,7 +4,7 @@ const CustomHead = () => {
   return (
     <Head>
       <meta charSet="utf-8" />
-      <link rel="icon" href="%PUBLIC_URL%/img/whiteLogo.ico" />
+      <link rel="icon" href="/img/whiteLogo.ico" />
       <meta
         property="og:image"
         content="https://www.ezdumptruck.com/img/imageLogo.ico"
@@ -25,14 +25,14 @@ const CustomHead = () => {
       <meta name="msapplication-TileColor" content="#000000" />
       <meta
         name="msapplication-TileImage"
-        content="%PUBLIC_URL%/whiteLogo.ico"
+        content="/whiteLogo.ico"
       />
-      <link rel="apple-touch-icon" href="%PUBLIC_URL%/imageLogo.ico" />
+      <link rel="apple-touch-icon" href="/imageLogo.ico" />
       <meta
         name="keywords"
         content="dumptrucks, dump trucks, dumps, trucks, contractors, owners, drivers"
       />
-      <link rel="canonical" href="https://www.ezdumptruck.com/" />
+      <link rel="canonical" href="https://ezdumptruck.com/" />
       <meta name="robots" content="follow" />
       <meta charSet="utf-8" />
       <title>Ez Dump Trucks App</title>

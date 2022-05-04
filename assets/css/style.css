@@ -1718,7 +1718,7 @@ body.dark .header.header-fixed .logo a img.logo-dark {
   color: var(--background-color-negative);
   position: absolute;
   height: 100%;
-  right: 12px;
+  width: auto;
   top: 50%;
   margin-top: -8px;
   -webkit-transition: all 0.3s ease 0s;
@@ -1729,6 +1729,9 @@ body.dark .header.header-fixed .logo a img.logo-dark {
   filter: alpha(opacity=0);
   -webkit-transform: translateX(-20px);
   transform: translateX(-20px);
+}
+.to-exit:before {
+  content: "\f062";
 }
 .custom-button-contact:before {
   content: "\f1d8";
@@ -3216,7 +3219,7 @@ body.blog-page article .comments-form .custom-button:before {
   outline: none;
 }
 .submit-form button:before {
-  right: 92px;
+  right: 156px;
 }
 .contactform .output_message {
   padding: 8px;

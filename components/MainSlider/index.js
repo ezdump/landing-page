@@ -13,6 +13,7 @@ import { setBannerLoaded } from "../../store/actions";
 const MainSlider = () => {
   const dispatch = useDispatch();
   const { isBannerLoaded } = useSelector((state) => state.banner);
+  const { device } = useSelector((state) => state.device);
   const [titlePos, setTitlePos] = React.useState(-100);
   const [subtitlePos, setSubtitlePos] = React.useState(-100);
   const [paragraphPos, setParagraphPos] = React.useState(-100);
@@ -33,18 +34,22 @@ const MainSlider = () => {
     }
   }, [isBannerLoaded]);
 
+  useEffect(() => {
+    console.log("device :: ", device);
+  }, [device]);
+
   const handleTextsAnimation = () => {
     setTimeout(() => {
-      setTitlePos(2);
+      setTitlePos(device === "mobile" ? 5 : 2);
     }, 1000);
     setTimeout(() => {
-      setSubtitlePos(2);
+      setSubtitlePos(device === "mobile" ? 5 : 2);
     }, 1200);
     setTimeout(() => {
-      setParagraphPos(2);
+      setParagraphPos(device === "mobile" ? 5 : 2);
     }, 1400);
     setTimeout(() => {
-      setButtonPos(2);
+      setButtonPos(device === "mobile" ? 5 : 2);
     }, 1600);
   };
 
@@ -53,10 +58,10 @@ const MainSlider = () => {
       setDesktopPos(-20);
     }, 1000);
     setTimeout(() => {
-      setTabletPos(15);
+      setTabletPos(device === "mobile" ? 20 : 15);
     }, 1200);
     setTimeout(() => {
-      setMobilePos(34);
+      setMobilePos(device === "mobile" ? 55 : 34);
     }, 1400);
   };
   return (

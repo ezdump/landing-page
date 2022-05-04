@@ -133,3 +133,44 @@ html {
   top: -5%;
   left: -5%;
 }
+
+.video-background {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10000;
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: all 0.5s;
+}
+.video-background.open {
+  display: block;
+}
+
+.video-background-iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 470px;
+}
+
+.video-close-button {
+  width: 3em;
+  height: 3em;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  color: "white";
+  cursor: pointer;
+}
+.video-close-button::before {
+  content: "\f00d";
+  font: 5px/1.2em FontAwesome;
+  width: 100%;
+  height: 100%;
+  font-size: 3em;
+}

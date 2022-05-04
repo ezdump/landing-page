@@ -81,32 +81,32 @@
   cursor: pointer;
 }
 
+.device {
+  position: relative;
+}
+
 .mainslider > .desktop {
   position: absolute;
-  width: 45em;
-  top: 25%;
+  width: 50em;
+  top: 15%;
   border-radius: 8px;
   color: #000;
   font-size: 1em;
   text-align: center;
 }
 
-.device {
-  position: relative;
-}
-
 .desktop > .device > .view {
   position: absolute;
-  top: 3.7em;
-  left: 7.6em;
+  top: 4em;
+  left: 8.5em;
   width: 66%;
   height: 67.5%;
 }
 
 .mainslider > .tablet {
   position: absolute;
-  width: 22em;
-  top: 30%;
+  width: 25em;
+  top: 24%;
   border-radius: 8px;
   color: #000;
   font-size: 1em;
@@ -115,8 +115,8 @@
 
 .tablet > .device > .view {
   position: absolute;
-  top: 3.7em;
-  left: 3.6em;
+  top: 4.5em;
+  left: 4.1em;
   width: 67%;
 }
 
@@ -132,19 +132,19 @@
 
 .mobile > .view {
   position: absolute;
-  top: 1em;
+  top: 0em;
   left: 0.2em;
-  width: 84%;
-  height: 21.5em;
-  border-radius: 30px;
+  width: 95%;
+  height: 24.3em;
+  border-radius: 28px;
   overflow: hidden;
 }
 
 .mobile > .device {
   position: absolute;
-  top: 1em;
+  top: 0em;
   left: 0em;
-  width: 89%;
+  width: 100%;
   height: 22.5em;
   border-radius: 10px;
   border-bottom-left-radius: 30px;
@@ -155,7 +155,7 @@
 @media (max-width: 1199px) {
   .mainslider > .title {
     position: absolute;
-    top: 15%;
+    top: 7em;
     font-size: 2rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -166,24 +166,58 @@
   }
 
   .mainslider > .subtitle {
-    top: 30%;
+    top: 40em;
     font-size: 0.6em;
   }
 
   .mainslider > .paragraph {
     width: 400px;
-    top: 40%;
+    top: 28em;
   }
 
   .mainslider > .button {
-    top: 52%;
+    top: 34em;
+  }
+
+  .mainslider > .desktop {
+    width: 45em;
+  }
+  
+  .desktop > .device > .view {
+    width: 66%;
+    height: 67.5%;
+    top: 3.7em;
+    left: 7.7em;
+  }
+  
+  .mainslider > .tablet {
+    width: 22em;
+  }
+  
+  .tablet > .device > .view {
+    width: 67%;
+    top: 3.9em;
+    left: 3.7em;
+  }
+  
+  .mainslider > .mobile {
+    width: 12em;
+  }
+  
+  .mobile > .view {
+    width: 84%;
+    height: 21.5em;
+  }
+  .mobile > .device {
+    width: 88%;
+    height: 22.5em;
   }
 }
 
 @media (max-width: 767px) {
   .mainslider > .title {
     position: absolute;
-    top: 12%;
+    top: 2.5em;
     font-size: 2rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -194,17 +228,17 @@
   }
 
   .mainslider > .subtitle {
-    top: 25%;
+    top: 23em;
     font-size: 0.55em;
   }
 
   .mainslider > .paragraph {
-    width: 380px;
-    top: 34%;
+    width: 340px;
+    top: 16em;
   }
 
   .mainslider > .button {
-    top: 45%;
+    top: 23em;
   }
 
   .mainslider > .desktop {

@@ -19,8 +19,9 @@ const ContactForm = () => {
   };
   const sendMessage = (e) => {
     console.log("almost handling");
+    e.preventDefault()
     if (name.length && email.length && message.length) {
-      fetch("/contact_us", {
+      fetch("/api/contactUs", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
