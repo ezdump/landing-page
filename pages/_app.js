@@ -93,4 +93,9 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
+/** Angel Martinez
+ *  Rafaela, Santa Fe, Argentina
+ *  amartinez.web.app
+ */
+
 export default wrapper.withRedux(MyApp);
