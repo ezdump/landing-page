@@ -11,7 +11,7 @@ const transport = mailer.createTransport({
 
 export default function handler(req, res) {
   if (req.method === "POST") {
-    const { name, email, message, companyName, city } = req.body;
+    const { name, email, message, company, city } = req.body;
 
     if (!name || !email || !message) {
       return res.status(500).json({
@@ -29,7 +29,7 @@ export default function handler(req, res) {
           name +
           "<br>" +
           "<strong>Company Name: </strong>" +
-          companyName +
+          company +
           "<br>" +
           "<strong>City: </strong>" +
           city +

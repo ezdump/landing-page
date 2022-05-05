@@ -42,6 +42,7 @@ const ContactForm = () => {
           company: company,
           email: email,
           message: message,
+          city: city,
         }),
       })
         .then((res) => {
