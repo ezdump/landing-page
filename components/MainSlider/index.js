@@ -32,11 +32,8 @@ const MainSlider = () => {
         handleImagesAnimation();
       }, 1500);
     }
+    // eslint-disable next-line react-hooks/exhaustive-deps
   }, [isBannerLoaded]);
-
-  useEffect(() => {
-    console.log("device :: ", device);
-  }, [device]);
 
   const handleTextsAnimation = () => {
     setTimeout(() => {
@@ -72,6 +69,7 @@ const MainSlider = () => {
           className="background-image"
           layout="fill"
           objectFit="cover"
+          alt="Background Image Dump Trucks"
           onLoadingComplete={() => dispatch(setBannerLoaded())}
         />
       </div>
@@ -137,6 +135,7 @@ const MainSlider = () => {
           target="_blank"
           href="http://admin.ezdumptruck.com/login"
           className="custom-button slider-button scroll-to-target"
+          rel="noreferrer"
         >
           SIGN UP FREE
         </a>

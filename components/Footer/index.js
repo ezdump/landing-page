@@ -31,6 +31,7 @@ const Footer = () => {
                 className="twitter"
                 href="https://twitter.com/ezdumptruck"
                 title="twitter"
+                rel="noreferrer"
               ></a>
             </li>
             <li>
@@ -39,6 +40,7 @@ const Footer = () => {
                 className="facebook"
                 href="https://www.facebook.com/ezdumptruck"
                 title="facebook"
+                rel="noreferrer"
               ></a>
             </li>
             <li>
@@ -47,6 +49,7 @@ const Footer = () => {
                 className="instagram"
                 href="https://www.instagram.com/ezdumptruck"
                 title="instagram"
+                rel="noreferrer"
               ></a>
             </li>
             {/* <li>
@@ -58,6 +61,7 @@ const Footer = () => {
                 className="youtube"
                 href="https://youtube.com/channel/UC7NpjWOeFq43bo5vGgMKqiw"
                 title="youtube"
+                rel="noreferrer"
               ></a>
             </li>
           </ul>
@@ -68,6 +72,7 @@ const Footer = () => {
         <a
           target="_blank"
           href="https://apps.apple.com/us/app/ez-drivers/id1537247152#?platform=iphone"
+          rel="noreferrer"
         >
           <div className="appstore-wrapper">
             <Image
@@ -80,6 +85,7 @@ const Footer = () => {
         <a
           className="mb-3"
           target="_blank"
+          rel="noreferrer"
           href="https://play.google.com/store/apps/details?id=uy.spacedev.ezdumpdrivers&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
         >
           <div className="google-play-wrapper">

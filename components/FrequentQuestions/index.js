@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import banner from "../../assets/img/about-us-banner.png";
 import bannerBackground from "../../assets/img/about-us-banner-background.svg";
 
 const FrequentQuestions = () => {
+  const [index, setIndex] = useState(0);
+
   return (
-    <section id="about" className="about">
+    <section id="questions" className="about">
       {/* Container Starts */}
       <div className="container">
         {/* Main Heading Starts */}
@@ -27,22 +29,42 @@ const FrequentQuestions = () => {
             {/* Tabs Heading Starts */}
             <ul className="nav nav-tabs nav-questions">
               <li>
-                <a className="active" data-toggle="tab" href="#menu1">
+                <a
+                  className={index === 0 ? "active" : ""}
+                  data-toggle="tab"
+                  href="#questions"
+                  onClick={() => setIndex(0)}
+                >
                   How much EZ DUMP TRUCK COST?
                 </a>
               </li>
               <li>
-                <a data-toggle="tab" href="#menu2">
+                <a
+                  className={index === 1 ? "active" : ""}
+                  data-toggle="tab"
+                  href="#questions"
+                  onClick={() => setIndex(1)}
+                >
                   How does EZ DUMP TRUCK APPS WORK?
                 </a>
               </li>
               <li>
-                <a data-toggle="tab" href="#menu3">
+                <a
+                  className={index === 2 ? "active" : ""}
+                  data-toggle="tab"
+                  href="#questions"
+                  onClick={() => setIndex(2)}
+                >
                   What is required to work with EZ DUMP TRUCK ?
                 </a>
               </li>
               <li>
-                <a data-toggle="tab" href="#menu4">
+                <a
+                  className={index === 3 ? "active" : ""}
+                  data-toggle="tab"
+                  href="#questions"
+                  onClick={() => setIndex(3)}
+                >
                   HOW DO I GET PAID?
                 </a>
               </li>
@@ -50,14 +72,20 @@ const FrequentQuestions = () => {
             {/* Tabs Heading Ends */}
             {/* Tabs Content Starts */}
             <div className="tab-content">
-              <div id="menu1" className="tab-pane fade in active">
+              <div
+                id="menu1"
+                className={`tab-pane fade ${index === 0 ? "in active" : ""}`}
+              >
                 <p>
                   Our platforms are 100% FREE and have NO HIDDEN FEES. You can
                   sign up in just a couple seconds and get all the features you
                   want from our platforms to make your journey easier.
                 </p>
               </div>
-              <div id="menu2" className="tab-pane fade">
+              <div
+                id="menu2"
+                className={`tab-pane fade ${index === 1 ? "in active" : ""}`}
+              >
                 <p>
                   As a contractor, you can find thousands of dump trucks
                   available In your area; in just a click, you can find and book
@@ -70,15 +98,21 @@ const FrequentQuestions = () => {
                 </p>
               </div>
 
-              <div id="menu3" className="tab-pane fade">
-                <p>General requirements that you're used to having.</p>
+              <div
+                id="menu3"
+                className={`tab-pane fade ${index === 2 ? "in active" : ""}`}
+              >
+                <p>General requirements that you&apos;re used to having.</p>
                 <p>-Bank account to make your payments quicker.</p>
                 <p>-Auto liability insurance.</p>
                 <p>-General liability insurance.</p>
-                <p>-Worker's compensation insurance.</p>
-                <p>-Fill out the subcontractor's agreement.</p>
+                <p>-Worker&apos;s compensation insurance.</p>
+                <p>-Fill out the subcontractor&apos;s agreement.</p>
               </div>
-              <div id="menu4" className="tab-pane fade">
+              <div
+                id="menu4"
+                className={`tab-pane fade ${index === 3 ? "in active" : ""}`}
+              >
                 <p>
                   We provide an easy way to get paid; with an automated
                   invoicing and payments platform, you choose and agree on terms
@@ -117,6 +151,7 @@ const FrequentQuestions = () => {
                 target="_blank"
                 href="http://admin.ezdumptruck.com/login"
                 className="custom-button slider-button scroll-to-target"
+                rel="noreferrer"
               >
                 SIGN UP FREE
               </a>

@@ -3,6 +3,11 @@ import Head from "next/head";
 const CustomHead = () => {
   return (
     <Head>
+      <link
+        href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900"
+        rel="preconnect"
+        crossOrigin
+      />
       <meta charSet="utf-8" />
       <link rel="icon" href="/img/whiteLogo.ico" />
       <meta
@@ -23,10 +28,7 @@ const CustomHead = () => {
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://www.ezdumptruck.com" />
       <meta name="msapplication-TileColor" content="#000000" />
-      <meta
-        name="msapplication-TileImage"
-        content="/whiteLogo.ico"
-      />
+      <meta name="msapplication-TileImage" content="/whiteLogo.ico" />
       <link rel="apple-touch-icon" href="/imageLogo.ico" />
       <meta
         name="keywords"
@@ -37,22 +39,16 @@ const CustomHead = () => {
       <meta charSet="utf-8" />
       <title>Ez Dump Trucks App</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-      <link
-        href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900"
-        rel="stylesheet"
-      />
-
-      <script type="text/javascript" src="/js/jquery-2.2.4.min.js"></script>
       <script
+        async
+        type="text/javascript"
+        src="/js/plugins/custom/intercom.js"
+      ></script>
+      {/*       <script
         type="text/javascript"
         src="/js/plugins/jquery.easing.1.3.js"
-      ></script>
-      <script
-        type="text/javascript"
-        src="/js/plugins/bootstrap.bundle.min.js"
-      ></script>
-      <script
+      ></script> */}
+      {/* <script
         type="text/javascript"
         src="/js/plugins/jquery.bxslider.min.js"
       ></script>
@@ -60,11 +56,8 @@ const CustomHead = () => {
         type="text/javascript"
         src="/js/plugins/jquery.filterizr.js"
       ></script>
-      <script
-        type="text/javascript"
-        src="/js/plugins/jquery.magnific-popup.min.js"
-      ></script>
-      <script
+       */}
+      {/*  <script
         type="text/javascript"
         src="/js/plugins/jquery.singlePageNav.min.js"
       ></script>
@@ -112,15 +105,10 @@ const CustomHead = () => {
       <script
         type="text/javascript"
         src="/js/plugins/revolution/js/extensions/revolution.extension.video.min.js"
-      ></script>
-
-      {/* <script type="text/javascript" src="/js/custom.js"></script> */}
+      ></script> */}
       {/* <script type="text/javascript" src="/js/plugins/custom/loader.js"></script> */}
-      <script
-        type="text/javascript"
-        src="/js/plugins/custom/intercom.js"
-      ></script>
-      <script>
+
+      {/*  <script>
         {
           `(function () {
             "use strict";
@@ -168,7 +156,7 @@ const CustomHead = () => {
             });
           })(jQuery);`
         }
-      </script>
+      </script> */}
     </Head>
   );
 };

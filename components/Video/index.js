@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import { useSelector } from "react-redux";
 import background from "../../assets/img/slider-background.jpg";
 
 const Video = () => {
+  const { device } = useSelector((state) => state.device);
   const [isVisible, setIsVisible] = useState(false);
 
   const handleClose = () => {
@@ -14,7 +16,7 @@ const Video = () => {
     var iframeSrc = iframe.src;
     iframe.src = iframeSrc;
   };
-  
+
   return (
     <>
       <div className={`video-background ${isVisible ? "open" : ""}`}>
@@ -23,7 +25,8 @@ const Video = () => {
           id="ytplayer"
           type="text/html"
           src={`https://www.youtube.com/embed/gdwDgEjTbW8?autoplay=0`}
-          frameborder="0"
+          frameBorder="0"
+          height={  device === "mobile" ? "200" : "470px"}
           className={`video-background-iframe ${isVisible ? "open" : ""}`}
         ></iframe>
       </div>
@@ -47,7 +50,7 @@ const Video = () => {
             <div className="video-content">
               <p className="text-center">
                 We’re developing a number of special projects if interested,
-                <br /> Don't hesitate to see the promo video
+                <br /> Don&apos;t hesitate to see the promo video
               </p>
               {/* Video Play Starts */}
               <div className="magnific-popup-gallery">

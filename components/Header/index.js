@@ -26,7 +26,6 @@ const Header = () => {
   }, []);
 
   useEffect(() => {
-    console.log("isnavopen", isNavOpen);
   }, [isNavOpen]);
 
   return (

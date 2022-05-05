@@ -1,16 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import { apiBaseUrl } from "../../config";
+import Script from "next/script";
 
 const ContactForm = () => {
   const [name, setName] = useState("");
+  const [noName, setNoName] = useState(false);
   const [email, setEmail] = useState("");
+  const [noEmail, setNoEmail] = useState(false);
   const [city, setCity] = useState("");
   const [message, setMessage] = useState("");
+  const [noMessage, setNoMessage] = useState(false);
   const [company, setCompany] = useState("");
   const [alertVisible, setAlertVisible] = useState(false);
   const [alertContent, setAlertContent] = useState("");
   const [isError, setIsError] = useState(false);
+  const [isButtonDisabled, setIsButtonDisabled] = useState(false);
 
   const closeDelay = () => {
     setTimeout(() => {
@@ -18,9 +23,15 @@ const ContactForm = () => {
     }, 3000);
   };
   const sendMessage = (e) => {
-    console.log("almost handling");
-    e.preventDefault()
+    e.preventDefault();
+    if (isButtonDisabled) return;
+
+    if (!name || name === "") setNoName(true);
+    if (!email || email === "") setNoEmail(true);
+    if (!message || message === "") setNoMessage(true);
+    
     if (name.length && email.length && message.length) {
+      setIsButtonDisabled(true);
       fetch("/api/contactUs", {
         method: "POST",
         headers: {
@@ -45,16 +56,23 @@ const ContactForm = () => {
             setAlertVisible(true);
             closeDelay();
           }
+          setIsButtonDisabled(false);
         })
         .catch((err) => {
           setAlertContent("Error sending message");
           setIsError(true);
           setAlertVisible(true);
           closeDelay();
-          console.log(err);
+          setIsButtonDisabled(false);
         });
     }
   };
+
+  useEffect(() => {
+    if (name && name !== "") setNoName(false);
+    if (email && email !== "") setNoEmail(false);
+    if (message && message !== "") setNoMessage(false);
+  }, [name, email, message]);
 
   return (
     <section id="contact" className="contactform">
@@ -82,7 +100,11 @@ const ContactForm = () => {
               <div className="row form-inputs">
                 {/* Name Field Starts */}
                 <div className="col-md-6 form-group custom-form-group">
-                  <span className="input custom-input">
+                  <span
+                    className={`input custom-input ${
+                      noName ? "has-error" : ""
+                    }`}
+                  >
                     <input
                       value={name}
                       onChange={(e) => setName(e.target.value)}
@@ -136,7 +158,11 @@ const ContactForm = () => {
                 </div>
                 {/* Email Name Field Starts */}
                 <div className="col-md-6 form-group custom-form-group">
-                  <span className="input custom-input">
+                  <span
+                    className={`input custom-input ${
+                      noEmail ? "has-error" : ""
+                    }`}
+                  >
                     <input
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
@@ -165,6 +191,7 @@ const ContactForm = () => {
                     cols={45}
                     rows={7}
                     required
+                    className={noMessage ? "has-error" : ""}
                   ></textarea>
                 </div>
                 {/* Message Field Ends */}
@@ -173,8 +200,11 @@ const ContactForm = () => {
                 <div className="col-md-6 submit-form mx-auto">
                   <button
                     onClick={sendMessage}
-                    className="custom-button custom-button-contact"
+                    className={`custom-button custom-button-contact ${
+                      isButtonDisabled ? "is-disabled" : ""
+                    }`}
                     title="Send"
+                    disabled={isButtonDisabled}
                   >
                     Send Message
                   </button>

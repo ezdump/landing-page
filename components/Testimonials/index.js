@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image"
 const Testimonials = () => {
   return (
     <section className="testimonials">
@@ -35,7 +36,7 @@ const Testimonials = () => {
               {/* Quote #1 Starts */}
               <div className="carousel-item active">
                 <blockquote>
-                  <img
+                  <Image
                     className="rounded-circle img-fluid"
                     src="http://via.placeholder.com/112x112"
                     alt="client"
@@ -55,7 +56,7 @@ const Testimonials = () => {
               {/* Quote #2 Starts */}
               <div className="carousel-item">
                 <blockquote>
-                  <img
+                  <Image
                     className="rounded-circle img-fluid"
                     src="http://via.placeholder.com/112x112"
                     alt="client"
@@ -75,7 +76,7 @@ const Testimonials = () => {
               {/* Quote #3 Starts */}
               <div className="carousel-item">
                 <blockquote>
-                  <img
+                  <Image
                     className="rounded-circle img-fluid"
                     src="http://via.placeholder.com/112x112"
                     alt="client"

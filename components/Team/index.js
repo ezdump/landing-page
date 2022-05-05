@@ -1,4 +1,6 @@
 import React from "react";
+import Image from "next/image";
+
 const Team = () => {
   return (
     <section id="team" className="team">
@@ -31,7 +33,7 @@ const Team = () => {
                 data-gal="magnific-pop-up[team]"
                 className="team-member-img-wrap"
               >
-                <img
+                <Image
                   src="http://via.placeholder.com/480x600"
                   alt="team member"
                 />
@@ -67,7 +69,7 @@ const Team = () => {
                 data-gal="magnific-pop-up[team]"
                 className="team-member-img-wrap"
               >
-                <img
+                <Image
                   src="http://via.placeholder.com/480x600"
                   alt="team member"
                 />
@@ -104,7 +106,7 @@ const Team = () => {
                 data-gal="magnific-pop-up[team]"
                 className="team-member-img-wrap"
               >
-                <img src="http://via.placeholder.com/480x600" alt="" />
+                <Image src="http://via.placeholder.com/480x600" alt="" />
               </a>
               {/* Team Member Picture Ends */}
               {/* Team Member Details Starts */}
@@ -137,7 +139,7 @@ const Team = () => {
                 data-gal="magnific-pop-up[team]"
                 className="team-member-img-wrap"
               >
-                <img
+                <Image
                   src="http://via.placeholder.com/480x600"
                   alt="team member"
                 />

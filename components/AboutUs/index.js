@@ -31,7 +31,7 @@ const AboutUs = () => {
             <p>
               <span>
                 {" "}
-                Do you feel that you're losing control over your business?{" "}
+                Do you feel that you&apos;re losing control over your business?{" "}
               </span>
               <br />
               <br />
@@ -57,6 +57,7 @@ const AboutUs = () => {
                 target="_blank"
                 href="http://admin.ezdumptruck.com/login"
                 className="custom-button slider-button scroll-to-target"
+                rel="noreferrer"
               >
                 SIGN UP FREE
               </a>
@@ -75,7 +76,7 @@ const AboutUs = () => {
               <div className="yellow_block about_us_block" />
               <div className="before-after-image">
                 <Image
-                  alt="Before EzDumpTruck, After EzDumpTruck"
+                  alt="Before Ez Dump Truck, After Ez Dump Truck"
                   className="img-fluid"
                   src={banner}
                   objectFit="contain"

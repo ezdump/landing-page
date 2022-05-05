@@ -82,6 +82,7 @@ const WhyUs = () => {
                       className="twitter"
                       href="https://twitter.com/ezdumptruck"
                       title="twitter"
+                      rel="noreferrer"
                     ></a>
                   </li>
                   <li>
@@ -90,6 +91,7 @@ const WhyUs = () => {
                       className="facebook"
                       href="https://www.facebook.com/ezdumptruck"
                       title="facebook"
+                      rel="noreferrer"
                     ></a>
                   </li>
                   <li>
@@ -98,6 +100,7 @@ const WhyUs = () => {
                       className="instagram"
                       href="https://www.instagram.com/ezdumptruck"
                       title="instagram"
+                      rel="noreferrer"
                     ></a>
                   </li>
                   {/* <li>
@@ -109,6 +112,7 @@ const WhyUs = () => {
                       className="youtube"
                       href="https://youtube.com/channel/UC7NpjWOeFq43bo5vGgMKqiw"
                       title="youtube"
+                      rel="noreferrer"
                     ></a>
                   </li>
                 </ul>

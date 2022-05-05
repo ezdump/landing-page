@@ -103,7 +103,7 @@ const Features = () => {
 
   useEffect(() => {
     setTotalFeatures(ourFeatures.length);
-  }, [ourFeatures]);
+  }, []);
 
   return (
     <section id="features" className="services">

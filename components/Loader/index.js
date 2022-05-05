@@ -15,10 +15,6 @@ const Loader = () => {
     }
   }, [isBannerLoaded]);
 
-  const onBackgrounLoaded = () => {
-    console.log("background loaded");
-  };
-
   return (
     <div
       className="loader-wrapper"
