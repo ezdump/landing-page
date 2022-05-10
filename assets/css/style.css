@@ -4120,6 +4120,9 @@ footer a:hover {
     height: 59.5% !important;
     top: 40% !important;
   }
+  .before-after-image{
+    width: 105% !important;
+  }
   .questions-title {
     font-size: 2.5em !important;
   }
