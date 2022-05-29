@@ -45,6 +45,8 @@ const MainSlider = () => {
       } else {
         if (width > 1400) {
           spacing = 12;
+        } else {
+          spacing = 2;
         }
       }
     }
