@@ -1,0 +1,66 @@
+.footer {
+  padding: 40px;
+  background-color: #111;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
+.footer .container {
+  padding: 30px 0;
+}
+.footer,
+.footer p,
+footer a {
+  color: var(--text-color);
+  padding-bottom: 0;
+}
+.footer a,
+footer a:hover {
+  color: var(--primary-color);
+}
+.footer .container p:first-child {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.footer .social-icons ul li a {
+  width: 42px;
+  height: 42px;
+  line-height: 40px;
+}
+.footer .social-icons ul li a:before {
+  font-size: 21px;
+}
+
+.apps {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.apps > a {
+  width: auto !important;
+}
+.appstore-wrapper {
+  width: 25em;
+  position: relative;
+  height: 10em;
+  margin: 0;
+}
+.appstore-wrapper > span {
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+.google-play-wrapper {
+  width: 25em;
+  position: relative;
+  height: 10em;
+  margin: 0;
+}
+.google-play-wrapper > span {
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}

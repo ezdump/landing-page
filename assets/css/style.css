@@ -3602,66 +3602,7 @@ body.dark.blog-page .banner-blog-post .meta {
 /* [ FOOTER ] */
 /*================================================== */
 
-.footer {
-  padding: 40px;
-  background-color: #111;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-}
-.footer .container {
-  padding: 30px 0;
-}
-.footer,
-.footer p,
-footer a {
-  color: var(--text-color);
-  padding-bottom: 0;
-}
-.footer a,
-footer a:hover {
-  color: var(--primary-color);
-}
-.footer .container p:first-child {
-  font-weight: 500;
-  text-transform: uppercase;
-}
-.footer .social-icons ul li a {
-  width: 42px;
-  height: 42px;
-  line-height: 40px;
-}
-.footer .social-icons ul li a:before {
-  font-size: 21px;
-}
 
-.appstore-wrapper {
-  width: 90%;
-  position: relative;
-  height: 10em;
-}
-.appstore-wrapper > span {
-  position: absolute !important;
-  top: 0;
-  left: 0;
-  width: 100% !important;
-  height: 100% !important;
-}
-.appstore-button {
-  width: 90% !important;
-  max-width: 25em !important;
-  object-fit: contain !important;
-}
-.google-play-wrapper {
-  width: 90%;
-  position: relative;
-  height: 10em;
-}
-.google-play-button {
-  width: 90% !important;
-  max-width: 25em !important;
-  object-fit: contain !important;
-}
 
 .animatable {
   z-index: 1;

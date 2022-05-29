@@ -5,6 +5,7 @@ import "../assets/css/magnific-popup.css";
 import "../assets/css/rtl.css";
 import "../assets/css/skins/goldenrod.css";
 import "../assets/css/style.css";
+import "../assets/css/footer.css";
 import "../assets/css/main-slider.css";
 import "../assets/css/header.css";
 import "../assets/js/plugins/revolution/css/layers.css";
