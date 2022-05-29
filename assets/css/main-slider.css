@@ -182,28 +182,28 @@
   .mainslider > .desktop {
     width: 45em;
   }
-  
+
   .desktop > .device > .view {
     width: 66%;
     height: 67.5%;
     top: 3.7em;
     left: 7.7em;
   }
-  
+
   .mainslider > .tablet {
     width: 22em;
   }
-  
+
   .tablet > .device > .view {
     width: 67%;
     top: 3.9em;
     left: 3.7em;
   }
-  
+
   .mainslider > .mobile {
     width: 12em;
   }
-  
+
   .mobile > .view {
     width: 84%;
     height: 21.5em;
@@ -245,24 +245,24 @@
     width: 30em;
     top: 50%;
   }
-  
+
   .desktop > .device > .view {
     top: 2.5em;
     left: 5.2em;
   }
-  
+
   .mainslider > .tablet {
     width: 18em;
     top: 54%;
   }
-  
+
   .tablet > .device > .view {
     position: absolute;
     top: 3.1em;
     left: 3em;
     width: 67%;
   }
-  
+
   .mainslider > .mobile {
     width: 12em;
     top: 60%;
@@ -275,7 +275,7 @@
   }
 
   .title > h1 > .ez_dump_truck_title {
-    font-size: .8em !important;
+    font-size: 0.8em !important;
   }
 
   .mainslider > .paragraph {
@@ -290,13 +290,135 @@
   .mainslider > .desktop {
     display: none;
   }
-  
+
   .mainslider > .tablet {
     display: none;
   }
-  
-  
+
   .mainslider > .mobile {
     display: none;
+  }
+}
+
+@media (min-width: 1400px) {
+  .mainslider > .title {
+    position: absolute;
+    top: 7em;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .title > h1 > .ez_dump_truck_title {
+    font-size: 1.5em !important;
+  }
+
+  .mainslider > .subtitle {
+    top: 25em;
+    font-size: 1em;
+  }
+
+  .mainslider > .paragraph {
+    width: 550px;
+    top: 20em;
+    font-size: 1.5em;
+  }
+
+  .mainslider > .button {
+    top: 38em;
+  }
+  .mainslider > .button > a {
+    font-size: 1.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+
+  .mainslider > .desktop {
+    width: 65em;
+  }
+
+  .desktop > .device > .view {
+    width: 66%;
+    height: 67.5%;
+    top: 5.2em;
+    left: 10.9em;
+  }
+
+  .mainslider > .tablet {
+    width: 32em;
+  }
+
+  .tablet > .device > .view {
+    width: 69%;
+    top: 6.3em;
+    left: 4.95em;
+  }
+
+  .mainslider > .mobile {
+    width: 20em;
+  }
+
+  .mobile > .view {
+    width: 84%;
+    height: 35.5em;
+  }
+  .mobile > .device {
+    width: 88%;
+    height: 22.5em;
+  }
+}
+
+@media (min-width: 1900px) {
+  .mainslider > .desktop {
+    width: 75em;
+  }
+
+  .desktop > .device > .view {
+    width: 66%;
+    height: 67.5%;
+    top: 5.9em;
+    left: 14em;
+  }
+
+  .mainslider > .tablet {
+    width: 37em;
+  }
+
+  .tablet > .device {
+    height: 47em;
+  }
+
+  .tablet > .device > span{
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .tablet > .device > .view > span {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .tablet > .device > .view {
+    position: absolute;
+    top: 7.5em;
+    left: 6.1em;
+    width: 67%;
+    height: 69%;
+  }
+
+  .mainslider > .mobile {
+    width: 24em;
+  }
+
+  .mobile > .view {
+    left: .6em;
+    top: .4em;
+    width: 83%;
+    height: 42.1em;
+  }
+
+  .mobile > .view > span {
+    width: 100% !important;
+    height: 100% !important;
   }
 }

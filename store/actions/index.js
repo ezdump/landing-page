@@ -10,3 +10,10 @@ export const setDevice = (device) => {
     device: device,
   };
 };
+
+export const setWidth = (width) => {
+  return {
+    type: "SET_WIDTH",
+    width: width,
+  };
+};

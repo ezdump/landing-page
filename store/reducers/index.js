@@ -16,6 +16,7 @@ export const bannerReducer = (state = bannerState, action) => {
 
 const deviceState = {
   device: "desktop",
+  width: 0,
 };
 
 export const deviceReducer = (state = deviceState, action) => {
@@ -24,6 +25,11 @@ export const deviceReducer = (state = deviceState, action) => {
       return {
         ...state,
         device: action.device,
+      };
+    case "SET_WIDTH":
+      return {
+        ...state,
+        width: action.width,
       };
     default:
       return state;
