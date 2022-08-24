@@ -46,7 +46,7 @@ const Header = () => {
                 <div className="image-wrapper">
                   <Image
                     src={logo}
-                    alt="logo-light"
+                    alt="ez easy dump truck"
                     layout="fill"
                     objectFit="content"
                   />

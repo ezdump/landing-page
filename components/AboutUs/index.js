@@ -68,7 +68,7 @@ const AboutUs = () => {
               <div className="pointed-background">
                 <Image
                   className="img-fluid about-img-points "
-                  alt="A nice background"
+                  alt="A nice background for easy dump truck"
                   src={imgPoints}
                   objectFit="cover"
                 />
@@ -76,7 +76,7 @@ const AboutUs = () => {
               <div className="yellow_block about_us_block" />
               <div className="before-after-image">
                 <Image
-                  alt="Before Ez Dump Truck, After Ez Dump Truck"
+                  alt="Before Ez easy Dump Truck, After Ez easy Dump Truck"
                   className="img-fluid"
                   src={banner}
                   objectFit="contain"

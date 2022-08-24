@@ -185,7 +185,7 @@ const Features = () => {
                         opacity: "0.2",
                       }}
                     >
-                      <Image src={item.img} alt={item.title} />
+                      <Image src={item.img} alt={item.title + " Ez easy Dump Truck"} />
                     </div>
                     <br />
                     <h2>{item.title}</h2>

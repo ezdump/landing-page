@@ -31,7 +31,7 @@ const WhyUs = () => {
                 }}
                 className="img-fluid why_us_points"
               >
-                <Image alt="A nice background again" src={imgPoints} />
+                <Image alt="A nice background for EZ Easy Dump Truck" src={imgPoints} />
               </div>
               <div className="yellow_block why_us_block" />
               <div
@@ -43,7 +43,7 @@ const WhyUs = () => {
                 }}
                 className="img-fluid why_us_load"
               >
-                <Image src={imgLoad} alt="Your drivers working" />
+                <Image src={imgLoad} alt="Your drivers working with EZ Easy Dump Truck" />
               </div>
               <div
                 style={{

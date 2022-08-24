@@ -32,7 +32,7 @@ const CustomHead = () => {
       <link rel="apple-touch-icon" href="/imageLogo.ico" />
       <meta
         name="keywords"
-        content="dumptrucks, dump trucks, dumps, trucks, contractors, owners, drivers"
+        content="ez, ez dump trucks, easy dump trucks, easy, dumptrucks, dump trucks, dumps, trucks, contractors, owners, drivers"
       />
       <link rel="canonical" href="https://ezdumptruck.com/" />
       <meta name="robots" content="follow" />
