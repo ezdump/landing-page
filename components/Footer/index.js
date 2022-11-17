@@ -10,7 +10,7 @@ const Footer = () => {
         {/* Copyright Text Starts */}
         <p>EZ DUMP TRUCK INC.</p>
         <p>
-          <span className="text-accent">(919)501-3361</span> or{" "}
+          <span className="text-accent">(919) 501-3361</span> or{" "}
           <span className="text-accent">(919) 946-8860</span>
         </p>
         <p>
