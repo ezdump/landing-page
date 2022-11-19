@@ -77,9 +77,18 @@ const FrequentQuestions = () => {
                 className={`tab-pane fade ${index === 0 ? "in active" : ""}`}
               >
                 <p>
-                  Our platforms are 100% FREE and have NO HIDDEN FEES. You can
-                  sign up in just a couple seconds and get all the features you
-                  want from our platforms to make your journey easier.
+                  You can sign up for FREE in just a couple seconds and get all
+                  the features you want from our platforms to make your journey
+                  easier. NO HIDDEN FEES and less than a regular broker but with
+                  more satisfactions.{" "}
+                  <a
+                    href="https://admin.ezdumptruck.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-accent"
+                  >
+                    SIGN UP NOW!!!
+                  </a>
                 </p>
               </div>
               <div

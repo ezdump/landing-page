@@ -9,7 +9,10 @@ const Footer = () => {
       <div className="container col-md-6 col-sm-12 info">
         {/* Copyright Text Starts */}
         <p>EZ DUMP TRUCK INC.</p>
-        <p>(919)946-8860</p>
+        <p>
+          <span className="text-accent">(919) 501-3361</span> or{" "}
+          <span className="text-accent">(919) 946-8860</span>
+        </p>
         <p>
           {" "}
           <a href="mailto:support@ezdumptruck.com">
