@@ -147,7 +147,7 @@ const MainSlider = () => {
       >
         <a
           target="_blank"
-          href="http://admin.ezdumptruck.com/login"
+          href="https://admin.ezdumptruck.com/login"
           className="custom-button slider-button scroll-to-target"
           rel="noreferrer"
         >

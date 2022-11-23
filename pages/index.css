@@ -187,3 +187,11 @@ html {
 .is-disabled::before {
   content: "";
 }
+
+.text-accent {
+  color: #daa520;
+}
+
+a.text-accent:hover {
+  color: #a88019;
+}
